@@ -77,7 +77,7 @@ export default function ExperienceTimeLine({ experience }: IPropsExperienceTimeL
               current={currentStepPosition}
               direction={"vertical"} 
               type={!isMobile ? "navigation" : "default"}
-              items={experience.map((el, index) => (
+              items={experience.map((el) => (
                 {
                   title: !isMobile ? el.placeTitle : ``,
                   description: !isMobile ? `${el.position} ${el.period} ${el.region}`: ``
