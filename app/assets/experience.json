@@ -1,0 +1,83 @@
+[
+  {
+    "id": 0,
+    "placeTitle": "Cyberpolice of Ukraine",
+    "period": "nov. 2022 - current time",
+    "region": "Odesa, Ukraine",
+    "position": "middle frontend developer",
+    "descriptions": [
+      "## 1)Key Project: Development of the **[Odessa State University of Internal Affairs Portal](https://oduvs.edu.ua)**",
+      "In my role, I developed a secure, modern, and user-friendly web portal for the Odessa State University of Internal Affairs within a short timeframe. The primary goal was to deliver a protected product with a fresh design and a CMS system.",
+      "To achieve this, I chose the **Next.js** framework as the main technology and **Strapi** as a headless CMS for the backend. Additionally, I utilized Next.js as a reverse proxy to anonymize the CMS location. For styling, I selected the **Ant Design (AntD)** UI library along with **Tailwind CSS** for custom designs.",
+      "Within 8 months, I successfully built and deployed a new web resource as the university's main portal. The project also involved using technologies such as **Docker**, **Nginx**, and **PostgreSQL** for deployment and database management.",
+      "Later, upon request, I implemented a microservice to integrate the portal with the university library's database. This microservice was developed using **Nest.js** to handle seamless interactions.",
+      "",
+      "## 2)NDA Project: Development of a Frontend for a CMS System",
+      "I developed this project from scratch, serving as the frontend part of a CMS system. The project was built using **Angular**, with **Tailwind CSS** and **Ng-Zorro** selected for styling. The system is designed to support approximately 300 regular users.",  
+      "The frontend interacts with over 120 API endpoints, and to optimize performance, I implemented an **IndexedDB** database. This reduces the number of backend requests and enables caching of large amounts of data.",
+      "In addition to the core functionality, I proposed and implemented several key features, including:  \n        - **Error debugging mechanisms**  \n        - **Monitoring tools for IndexedDB state**  \n        - **Media file preview functionality**  \n        - And more",
+      "The project is currently in a testing phase with 30 active users.",
+      "Additionally, the project utilizes **Docker** and **Jenkins** for deployment and CI/CD processes.",
+      "",
+      "## 3)NDA Legacy Project: Maintenance and Feature Development",
+      "I was responsible for maintaining and enhancing a legacy project built with **AngularJS**, **CoffeeScript**, **Jade**, and **SCSS**.",
+      "As part of my work, I implemented several new features and mechanisms, including:  \n        - **Interactive dashboards**  \n        - **Gantt chart functionality**  ",
+      "These additions significantly improved the user experience and provided valuable tools for project management within the system.  ",
+      "",
+      "## 4)Other Projects and Landing Pages",
+      "In addition to the above, I have worked on numerous projects and landing pages using a variety of libraries and technologies. These projects included diverse requirements and provided me with extensive experience in adapting to different tools and frameworks to deliver high-quality solutions."
+    ]
+  },
+  {
+    "id": 1,
+    "placeTitle": "MyPayNow",
+    "period": "jan. 2024 - current time",
+    "region": "Brisben, Australia",
+    "position": "junior AQA",
+    "descriptions": [
+      "## Development of Custom Mechanisms for Testing in Codeception Framework",
+      "During my work, I created numerous additional mechanisms to enhance testing capabilities in the **Codeception** framework, including:  \n        - **Template creation mechanism**: Enabled saving database states at specific moments and restoring them when needed, simplifying complex test setups.  \n        - **Email parsing mechanism**: Allowed extracting PDF documents, converting them to text and images, and cleaning dynamic elements for comparison against predefined templates.  \n        - **Image comparison mechanism**: Used the **Imagick** library to generate image difference files for precise visual regression testing.  \n        - **Database scraping mechanism**: Developed a tool to extract only essential fields from the database, reducing time spent analyzing nightly regression tests.  ",
+      "In addition to these mechanisms, I added numerous detailed test cases to improve system reliability and ensure comprehensive test coverage.  "
+    ]
+  },
+  {
+    "id": 2,
+    "placeTitle": "Sole trader Diachenko",
+    "period": "feb. 2019 - feb. 2022",
+    "region": "Dnipro, Ukraine",
+    "position": "software developer",
+    "descriptions": [
+      "Created APIs using the HTTP protocol.",
+      "Developed mobile applications and modules for interaction with databases using REST API.",
+      "Developed integration with a Telegram bot, enabling the client to directly manage the bot, receive notifications from customers, and automatically generate customer orders in their accounting system based on these interactions, utilizing the Telegram API with webhooks.", 
+      "Installed and configured Apache, SQL, and other software."
+    ]
+      
+  },
+  {
+    "id": 3,
+    "placeTitle": "Sole trader Dialog",
+    "period": "jun. 2016 - dec. 2018",
+    "region": "Odesa, Ukraine",
+    "position": "software developer",
+    "descriptions": [
+      "Developed software interfaces to facilitate the interaction between a mobile application and the client's accounting system.", 
+      "Developed modules for integrating external hardware with client systems, such as barcode scanners, scales, and receipt printers.", 
+      "Created a cross-platform application for iOS and Android and published it on the App Store.",  
+      "Provided training for three interns, one of whom was hired for a junior developer position."    
+    ]
+  },
+  {
+    "id": 4,
+    "placeTitle": "ltd Vesta",
+    "period": "nov. 2014 - jun. 2015",
+    "region": "Odesa, Ukraine",
+    "position": "software developer",
+    "descriptions": [
+      "Developed mechanisms for the interaction between clients' accounting systems and banks, enabling the automatic loading of payment orders and leaving accountants responsible only for validation.",
+      "Installed, configured, and enhanced software for payroll, accounting, and inventory management.", 
+      "Created mechanisms for transferring information between multiple databases.", 
+      "Developed a system for tracking and managing vehicle parking at the bus station in the city of Odesa."
+    ]
+  }
+]

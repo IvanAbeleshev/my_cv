@@ -1,0 +1,273 @@
+[
+  {
+    "id": 0,
+    "title": "Languages",
+    "skills": [
+      {
+        "id": 1,
+        "title": "Ukrainian",
+        "icon": "/img/skills/ukrainian.svg",
+        "version": "",
+        "description": "",
+        "rate": "C1"
+      },
+      {
+        "id": 0,
+        "title": "English",
+        "icon": "/img/skills/english.svg",
+        "version": "",
+        "description": "",
+        "rate": "B1"
+      },
+      {
+        "id": 2,
+        "title": "Russian",
+        "icon": "/img/skills/russian.svg",
+        "version": "",
+        "description": "",
+        "rate": "C2"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Programming languages",
+    "skills": [
+      {
+        "id": 20,
+        "title": "ts",
+        "icon": "/img/skills/ts.svg",
+        "version": "4+",
+        "description": "Used in all projects",
+        "rate": "4 / 5"
+      },
+      {
+        "id": 21,
+        "title": "js",
+        "icon": "/img/skills/js.svg",
+        "version": "4+",
+        "description": "Used in all projects",
+        "rate": "4 / 5"
+      },
+      {
+        "id": 22,
+        "title": "Node.js",
+        "icon": "/img/skills/node.svg",
+        "version": "4+",
+        "description": "Used in all projects",
+        "rate": "4 / 5"
+      },
+      {
+        "id": 23,
+        "title": "php",
+        "icon": "/img/skills/php.svg",
+        "version": "8+",
+        "description": "",
+        "rate": "2 / 5"
+      },
+      {
+        "id": 24,
+        "title": "coffee script",
+        "icon": "/img/skills/coffeescript.svg",
+        "version": "1.10",
+        "description": "",
+        "rate": "1 / 5"
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": "Frameworks",
+    "skills": [
+      {
+        "id": 30,
+        "title": "Angular",
+        "icon": "/img/skills/angular.svg",
+        "version": "16+",
+        "description": "Created full big cms.",
+        "rate": "4 / 5"
+      },
+      {
+        "id": 31,
+        "title": "Next.js",
+        "icon": "/img/skills/nextjs.svg",
+        "version": "13+",
+        "description": "created website oduvs.edu.ua",
+        "rate": "4 / 5"
+      },
+      {
+        "id": 32,
+        "title": "Nest.js",
+        "icon": "/img/skills/nestjs.svg",
+        "version": "",
+        "description": "",
+        "rate": "3 / 5"
+      },
+      {
+        "id": 33,
+        "title": "Codeception",
+        "icon": "/img/skills/codeception.svg",
+        "version": "1",
+        "description": "",
+        "rate": "3 / 5"
+      },
+      {
+        "id": 34,
+        "title": "strapi",
+        "icon": "/img/skills/strapi.svg",
+        "version": "",
+        "description": "",
+        "rate": "4 / 5"
+      },
+      {
+        "id": 35,
+        "title": "Angular.js",
+        "icon": "/img/skills/angularjs.svg",
+        "version": "1",
+        "description": "",
+        "rate": "2 / 5"
+      }
+    ]
+  },
+
+  {
+    "id": 3,
+    "title": "Markup and Styling Technologies",
+    "skills": [
+      {
+        "id": 40,
+        "title": "html",
+        "icon": "/img/skills/html.svg",
+        "version": "5",
+        "description": "",
+        "rate": "4.5 / 5"
+      },
+      {
+        "id": 41,
+        "title": "css",
+        "icon": "/img/skills/css.svg",
+        "version": "3",
+        "description": "",
+        "rate": "3.5 / 5"
+      },
+      {
+        "id": 42,
+        "title": "tailwind",
+        "icon": "/img/skills/tailwind.svg",
+        "version": "3",
+        "description": "",
+        "rate": "4.5 / 5"
+      },
+      {
+        "id": 43,
+        "title": "scss",
+        "icon": "/img/skills/scss.svg",
+        "version": "10",
+        "description": "",
+        "rate": "3 / 5"
+      },
+      {
+        "id": 44,
+        "title": "jade",
+        "icon": "/img/skills/jade.svg",
+        "version": "10",
+        "description": "",
+        "rate": "2 / 5"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Another libraries",
+    "skills": [
+      {
+        "id": 50,
+        "title": "react",
+        "icon": "/img/skills/react.svg",
+        "version": "16+",
+        "description": "",
+        "rate": "4 / 5"
+      },
+      {
+        "id": 51,
+        "title": "Redux toolkit",
+        "icon": "/img/skills/redux.svg",
+        "version": "",
+        "description": "",
+        "rate": "3.5 / 5"
+      },
+      {
+        "id": 52,
+        "title": "rxjs",
+        "icon": "/img/skills/rxjs.png",
+        "version": "",
+        "description": "",
+        "rate": "3 / 5"
+      },
+      {
+        "id": 53,
+        "title": "axios",
+        "icon": "/img/skills/axios.svg",
+        "version": "",
+        "description": "",
+        "rate": "4 / 5"
+      },
+      {
+        "id": 54,
+        "title": "antd",
+        "icon": "/img/skills/antd.svg",
+        "version": "",
+        "description": "",
+        "rate": "4.5 / 5"
+      },
+      {
+        "id": 55,
+        "title": "sequelize",
+        "icon": "/img/skills/sequelize.svg",
+        "version": "",
+        "description": "",
+        "rate": "2.5 / 5"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Tools",
+    "skills": [
+      {
+        "id": 60,
+        "title": "vs code",
+        "icon": "/img/skills/vscode.svg",
+        "version": "",
+        "description": "",
+        "rate": "3.5 / 5"
+      },
+      {
+        "id": 61,
+        "title": "docker",
+        "icon": "/img/skills/docker.svg",
+        "version": "",
+        "description": "",
+        "rate": "4 / 5"
+      },
+      {
+        "id": 62,
+        "title": "postgres",
+        "icon": "/img/skills/postgres.svg",
+        "version": "",
+        "description": "",
+        "rate": "2 / 5"
+      },
+      {
+        "id": 63,
+        "title": "npm",
+        "icon": "/img/skills/npm.svg",
+        "version": "",
+        "description": "",
+        "rate": "3 / 5"
+      }
+    ]
+  }
+
+]
