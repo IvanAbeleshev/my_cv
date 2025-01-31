@@ -10,6 +10,7 @@ services:
       - NODE_ENV=production
       - GOOGLE_PROJECT_ID=${GOOGLE_PROJECT_ID}
       - NEXT_PUBLIC_GOOGLE_RECAPTURE=${NEXT_PUBLIC_GOOGLE_RECAPTURE}
+      - GOOGLE_APPLICATION_CREDENTIALS=${GOOGLE_APPLICATION_CREDENTIALS}
     expose:
       - "3000"
     restart: unless-stopped
