@@ -29,7 +29,9 @@ export async function contactMeAction(token:string | null, receivedData: IContac
 
   try{
     console.log('request: ', request)
-    const [ response ] = await client.createAssessment(request)
+    const responseRecapture = await client.createAssessment(request)
+    console.log('response: ', responseRecapture)
+    const [ response ] = responseRecapture
     if (!response?.tokenProperties?.valid) {
       return (
         {
