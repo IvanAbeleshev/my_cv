@@ -27,25 +27,42 @@ export async function contactMeAction(token:string | null, receivedData: IContac
     parent: projectPath,
   })
 
-  const [ response ] = await client.createAssessment(request);
-
-  if (!response?.tokenProperties?.valid) {
+  try{
+    const [ response ] = await client.createAssessment(request);
+    if (!response?.tokenProperties?.valid) {
+      return (
+        {
+          isStatus: false,
+          errorMessage: `The CreateAssessment call failed because the token was: ${response?.tokenProperties?.invalidReason}`
+        }
+      )
+    }
+  }catch(e){
     return (
       {
         isStatus: false,
-        errorMessage: `The CreateAssessment call failed because the token was: ${response?.tokenProperties?.invalidReason}`
+        errorMessage: `Recapture checking does not return expected response`
       }
     )
   }
 
-  const message = await sendMeMessage(
-    `<b>From:</b> ${receivedData.contactInfo}\n<b>Message:</b> ${receivedData.textInfo}`
-  )
-  if(!message.message_id){
+  try {
+    const message = await sendMeMessage(
+      `<b>From:</b> ${receivedData.contactInfo}\n<b>Message:</b> ${receivedData.textInfo}`
+    )
+    if(!message.message_id){
+      return (
+        {
+          isStatus: true,
+          errorMessage: 'Message in delivery progress'
+        }
+      )
+    } 
+  } catch (error) {
     return (
       {
-        isStatus: true,
-        errorMessage: 'Message in delivery progress'
+        isStatus: false,
+        errorMessage: 'Telegram bot have issue and cant send the message'
       }
     )
   }
