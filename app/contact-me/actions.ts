@@ -14,18 +14,18 @@ export async function contactMeAction(token:string | null, receivedData: IContac
     )
   }
 
-  const client = new RecaptchaEnterpriseServiceClient()
-  const projectPath = client.projectPath(process.env.GOOGLE_PROJECT_ID)
+  // const client = new RecaptchaEnterpriseServiceClient()
+  // const projectPath = client.projectPath(process.env.GOOGLE_PROJECT_ID)
 
-  const request = ({
-    assessment: {
-      event: {
-        token: token,
-        siteKey: process.env.NEXT_PUBLIC_GOOGLE_RECAPTURE,
-      },
-    },
-    parent: projectPath,
-  })
+  // const request = ({
+  //   assessment: {
+  //     event: {
+  //       token: token,
+  //       siteKey: process.env.NEXT_PUBLIC_GOOGLE_RECAPTURE,
+  //     },
+  //   },
+  //   parent: projectPath,
+  // })
 
   // try{
   //   console.log('request: ', request)
