@@ -27,28 +27,28 @@ export async function contactMeAction(token:string | null, receivedData: IContac
     parent: projectPath,
   })
 
-  try{
-    console.log('request: ', request)
-    const responseRecapture = await client.createAssessment(request)
-    console.log('response: ', responseRecapture)
-    const [ response ] = responseRecapture
-    if (!response?.tokenProperties?.valid) {
-      return (
-        {
-          isStatus: false,
-          errorMessage: `The CreateAssessment call failed because the token was: ${response?.tokenProperties?.invalidReason}`
-        }
-      )
-    }
-  }catch(error){
-    console.log('error: ', error)
-    return (
-      {
-        isStatus: false,
-        errorMessage: `Recapture checking does not return expected response`
-      }
-    )
-  }
+  // try{
+  //   console.log('request: ', request)
+  //   const responseRecapture = await client.createAssessment(request)
+  //   console.log('response: ', responseRecapture)
+  //   const [ response ] = responseRecapture
+  //   if (!response?.tokenProperties?.valid) {
+  //     return (
+  //       {
+  //         isStatus: false,
+  //         errorMessage: `The CreateAssessment call failed because the token was: ${response?.tokenProperties?.invalidReason}`
+  //       }
+  //     )
+  //   }
+  // }catch(error){
+  //   console.log('error: ', error)
+  //   return (
+  //     {
+  //       isStatus: false,
+  //       errorMessage: `Recapture checking does not return expected response`
+  //     }
+  //   )
+  // }
 
   try {
     const message = await sendMeMessage(
