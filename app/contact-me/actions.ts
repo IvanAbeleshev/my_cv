@@ -41,7 +41,7 @@ export async function contactMeAction(token:string | null, receivedData: IContac
       )
     }
   }catch(error){
-    console.log(error)
+    console.log('error: ', error)
     return (
       {
         isStatus: false,
