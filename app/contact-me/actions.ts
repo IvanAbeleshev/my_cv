@@ -1,6 +1,6 @@
 'use server'
 
-// import { RecaptchaEnterpriseServiceClient } from "@google-cloud/recaptcha-enterprise"
+import { RecaptchaEnterpriseServiceClient } from "@google-cloud/recaptcha-enterprise"
 import { IContactMeFormValues } from "@interfaces/index"
 import { sendMeMessage } from "../lib/telegram"
 
@@ -14,41 +14,41 @@ export async function contactMeAction(token:string | null, receivedData: IContac
     )
   }
 
-  // const client = new RecaptchaEnterpriseServiceClient()
-  // const projectPath = client.projectPath(process.env.GOOGLE_PROJECT_ID)
+  const client = new RecaptchaEnterpriseServiceClient()
+  const projectPath = client.projectPath(process.env.GOOGLE_PROJECT_ID)
 
-  // const request = ({
-  //   assessment: {
-  //     event: {
-  //       token: token,
-  //       siteKey: process.env.NEXT_PUBLIC_GOOGLE_RECAPTURE,
-  //     },
-  //   },
-  //   parent: projectPath,
-  // })
+  const request = ({
+    assessment: {
+      event: {
+        token: token,
+        siteKey: process.env.NEXT_PUBLIC_GOOGLE_RECAPTURE,
+      },
+    },
+    parent: projectPath,
+  })
 
-  // try{
-  //   console.log('request: ', request)
-  //   const responseRecapture = await client.createAssessment(request)
-  //   console.log('response: ', responseRecapture)
-  //   const [ response ] = responseRecapture
-  //   if (!response?.tokenProperties?.valid) {
-  //     return (
-  //       {
-  //         isStatus: false,
-  //         errorMessage: `The CreateAssessment call failed because the token was: ${response?.tokenProperties?.invalidReason}`
-  //       }
-  //     )
-  //   }
-  // }catch(error){
-  //   console.log('error: ', error)
-  //   return (
-  //     {
-  //       isStatus: false,
-  //       errorMessage: `Recapture checking does not return expected response`
-  //     }
-  //   )
-  // }
+  try{
+    console.log('request: ', request)
+    const responseRecapture = await client.createAssessment(request)
+    console.log('response: ', responseRecapture)
+    const [ response ] = responseRecapture
+    if (!response?.tokenProperties?.valid) {
+      return (
+        {
+          isStatus: false,
+          errorMessage: `The CreateAssessment call failed because the token was: ${response?.tokenProperties?.invalidReason}`
+        }
+      )
+    }
+  }catch(error){
+    console.log('error: ', error)
+    return (
+      {
+        isStatus: false,
+        errorMessage: `Recapture checking does not return expected response`
+      }
+    )
+  }
 
   try {
     const message = await sendMeMessage(
