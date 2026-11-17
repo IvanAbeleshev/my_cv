@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon-red: #ff003c;
+  --neon-red-glow: 0 0 15px rgba(255, 0, 60, 0.5), 0 0 30px rgba(255, 0, 60, 0.25);
+  --dark-bg: #0a0a0a;
+  --card-bg: rgba(20, 20, 20, 0.75);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  
+  body {
+    background-color: #0a0a0a;
+    color: #f3f4f6;
+    overflow-x: hidden;
+    selection-background-color: #ff003c;
+    selection-color: #ffffff;
+  }
+
+  ::selection {
+    background: #ff003c;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  /* Neon text glow */
+  .neon-text {
+    color: #ff003c;
+    text-shadow: 0 0 8px rgba(255, 0, 60, 0.7), 0 0 20px rgba(255, 0, 60, 0.4);
+  }
+
+  .neon-text-subtle {
+    color: #ff3363;
+    text-shadow: 0 0 6px rgba(255, 0, 60, 0.4);
+  }
+
+  /* Glassmorphism cyberpunk cards */
+  .cyber-card {
+    background: rgba(18, 18, 18, 0.75);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 0, 60, 0.18);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .cyber-card:hover {
+    border-color: rgba(255, 0, 60, 0.5);
+    box-shadow: 0 0 25px rgba(255, 0, 60, 0.25);
+    transform: translateY(-4px);
+  }
+
+  /* Cyberpunk Primary Button */
+  .btn-neon-primary {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    font-family: var(--font-orbitron), sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff003c 0%, #b3002a 100%);
+    border: 1px solid #ff3363;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(255, 0, 60, 0.45);
+    transition: all 0.25s ease;
+    overflow: hidden;
+  }
+
+  .btn-neon-primary:hover {
+    box-shadow: 0 0 25px rgba(255, 0, 60, 0.75), 0 0 50px rgba(255, 0, 60, 0.35);
+    transform: translateY(-2px);
+    border-color: #ff6685;
+  }
+
+  /* Cyberpunk Secondary / Ghost Button */
+  .btn-neon-ghost {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    font-family: var(--font-orbitron), sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #ff3363;
+    background: rgba(255, 0, 60, 0.06);
+    border: 1px solid rgba(255, 0, 60, 0.35);
+    border-radius: 0.5rem;
+    transition: all 0.25s ease;
+  }
+
+  .btn-neon-ghost:hover {
+    color: #ffffff;
+    background: rgba(255, 0, 60, 0.18);
+    border-color: #ff003c;
+    box-shadow: 0 0 20px rgba(255, 0, 60, 0.4);
+    transform: translateY(-2px);
+  }
+
+  /* Cyber Tag / Tech Pill */
+  .cyber-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    background: rgba(255, 0, 60, 0.08);
+    border: 1px solid rgba(255, 0, 60, 0.25);
+    color: #ffccd5;
+    transition: all 0.2s ease;
+  }
+
+  .cyber-pill:hover {
+    background: rgba(255, 0, 60, 0.18);
+    border-color: rgba(255, 0, 60, 0.6);
+    color: #ffffff;
+  }
+
+  /* Cyberpunk grid background */
+  .cyber-grid {
+    background-image: 
+      linear-gradient(to right, rgba(255, 0, 60, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 0, 60, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Radial glow accents */
+  .radial-glow-top {
+    background: radial-gradient(circle 600px at 50% 0%, rgba(255, 0, 60, 0.12), transparent 70%);
+  }
+
+  .radial-glow-center {
+    background: radial-gradient(circle 500px at 50% 50%, rgba(255, 0, 60, 0.08), transparent 70%);
+  }
+}
+
+/* Custom Scrollbar in Dark Cyber Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 60, 0.35);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff003c;
+  box-shadow: 0 0 10px #ff003c;
+}

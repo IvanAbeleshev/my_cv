@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CV Portfolio
+
+This is a personal portfolio project built with Next.js and styled using Tailwind CSS. The portfolio showcases my skills, work experience, projects, and provides a way for potential clients or employers to contact me.
+
+## Features
+
+- **Responsive Design**: The portfolio is fully responsive and looks great on all devices.
+- **Dynamic Particle Background**: A visually appealing particle effect in the background.
+- **Smooth Scrolling Navigation**: Easy navigation between sections with smooth scrolling.
+- **Interactive Skill Progress Bars**: Skills are displayed with animated progress bars.
+- **Contact Form**: A functional contact form for inquiries.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (version 14 or later)
+- npm (Node package manager)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/cv-portfolio.git
+   ```
 
-## Learn More
+2. Navigate to the project directory:
+   ```bash
+   cd cv-portfolio
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. Open your browser and go to `http://localhost:3000`.
 
-## Deploy on Vercel
+## Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Modify the content in the `src/app` directory to update the sections of the portfolio.
+- Customize styles in `src/styles/globals.css` and `tailwind.config.js` as needed.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.

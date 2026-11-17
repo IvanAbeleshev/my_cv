@@ -1,6 +1,0 @@
-export * from './navigation-link/navigation-link.interface'
-export * from './skills/skill.interface'
-export * from './skills/skill-group.interface'
-export * from './contact-me/contact-me-form-values.interface'
-export * from './contact-me/contact-me-validation.interface'
-export * from './experience/experience.interface'
