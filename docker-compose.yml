@@ -1,29 +1,39 @@
-version: '3.8'
-
 services:
   nextjs:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        - NEXT_PUBLIC_GOOGLE_RECAPTURE=${NEXT_PUBLIC_GOOGLE_RECAPTURE}
     container_name: nextjs
+    env_file:
+      - .env
     environment:
       - NODE_ENV=production
-      # - GOOGLE_PROJECT_ID=${GOOGLE_PROJECT_ID}
-      # - NEXT_PUBLIC_GOOGLE_RECAPTURE=${NEXT_PUBLIC_GOOGLE_RECAPTURE}
-      # - GOOGLE_APPLICATION_CREDENTIALS=${GOOGLE_APPLICATION_CREDENTIALS}
     expose:
       - "3000"
     restart: unless-stopped
+    networks:
+      - my_cv
 
   nginx:
     image: nginx:latest
-    container_name: nginx
+    container_name: cv_nginx
     depends_on:
       - nextjs
     volumes:
       - /home/ssl_certificates/:/etc/nginx/ssl/:ro
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
-    ports:
-      - "80:80" 
-      - "443:443"
+    expose:
+      - "80"
+      - "443"
     restart: unless-stopped
+    networks:
+      my_cv:
+        aliases:
+          - cv_nginx
+
+networks:
+  my_cv:
+    name: my_cv
+    external: true
